@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Students</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h2>Registered Students</h2>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for msg in messages %}
+      <p style="color:green">{{ msg }}</p>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<form method="GET" action="/view-students">
+    <input type="text" name="search" placeholder="Search by name">
+    <button type="submit">Search</button>
+</form>
+
+
+<table>
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Course</th>
+    <th>Action</th>
+</tr>
+
+{% for s in students %}
+<tr>
+    <td>{{ s[0] }}</td>
+    <td>{{ s[1] }}</td>
+    <td>{{ s[2] }}</td>
+    <td>{{ s[3] }}</td>
+    <td>
+        <a href="/delete/{{ s[0] }}">
+            <button>Delete</button>
+        </a>
+    </td>
+</tr>
+{% endfor %}
+
+</table>
+
+<a href="/dashboard">⬅ Back</a>
+<div style="margin-top:20px; text-align:center;">
+    <a href="/view-students?page={{ page-1 }}">Previous</a> |
+    <a href="/view-students?page={{ page+1 }}">Next</a>
+</div>
+
+</div>
+
+</body>
+</html>
