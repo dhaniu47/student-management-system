@@ -1,32 +1,34 @@
-#  Student Management System (Flask)
+# Student Management System (Flask Web Application)
 
-A professional web-based Student Management System built using Flask and SQLite with authentication, session management, CRUD operations, search, pagination, and error handling.
+A professional full-stack web application built using Python Flask that allows administrators to manage student records efficiently.
 
----
+##  Live Demo
+https://student-management-system-o7jy.onrender.com
 
-# Features
+##  Features
+- User Registration & Login
+- Secure Authentication with Password Hashing
+- Add Students
+- View Students
+- Delete Students
+- Search Students
+- Session-based Login
+- Flash Messages for Actions
+- Responsive UI
 
-- User Registration & Secure Login  
-- Password Hashing (Werkzeug)  
-- Session-based Authentication  
-- Add Student  
-- View Students  
-- Search Students  
-- Delete Students  
-- Pagination (5 records per page)  
-- Flash Messages  
-- Backend Validation  
+##  Tech Stack
+- Python
+- Flask
+- SQLite
+- HTML
+- CSS
 
----
+##  Project Structure
+student_management_system/
+- app.py  
+- database.db  
+- requirements.txt  
+- templates/  
+- static/css/style.css  
 
-# Tech Stack
-
-- Python  
-- Flask  
-- SQLite  
-- HTML  
-- CSS  
-
----
-
-## How to Run Locally
+##  Run Locally
