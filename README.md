@@ -1,5 +1,8 @@
 # Student Management System (Flask Web Application)
 
+<img width="1920" height="1020" alt="Screenshot 2026-05-27 161827" src="https://github.com/user-attachments/assets/9d111ebf-ee9d-4129-9e33-c14a9db58b68" />
+
+
 A professional full-stack web application built using Python Flask that allows administrators to manage student records efficiently.
 
 ##  Live Demo
